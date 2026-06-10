@@ -1,391 +1,382 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>연남 룸싸롱 상세정보 및 이용절차 | 연남 룸싸롱 가격</title>
-  <meta name="description" content="연남동 프라이빗 모임 및 비즈니스 접대를 위한 하이엔드 정통 룸싸롱의 투명하고 정직한 정찰 주류 가격 안내 리포트. 위치 시그널과 정찰 가격 안내 수록.">
-  <meta name="keywords" content="연남 룸싸롱 가격, 연남 룸싸롱 위치, 연남 룸싸롱 가격, 연남 룸싸롱 시스템">
-  <link rel="canonical" href="https://t3b05-yn-room-pr-2.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="midnight-glass">
-  <meta name="bpaas-design-theme" content="kr-t3b05-yn-room-pr-2">
-  <style>
-    
-    :root {
-      --bg-dark: #1c1917;
-      --bg-card: rgba(255, 255, 255, 0.03);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --primary-neon: #44403c;
-      --accent-neon: #fbbf24;
-      --text-main: #f4f4f5;
-      --text-muted: #a1a1aa;
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    
-    .glow-header {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    .nav-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 20px;
-    }
-    
-    .logo-glow {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-neon);
-      text-shadow: 0 0 8px var(--accent-neon);
-    }
-    
-    .hero-glow {
-      padding: 140px 20px 100px;
-      text-align: center;
-      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
-      position: relative;
-    }
-    
-    .hero-glow h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-bottom: 24px;
-      letter-spacing: -0.06em;
-      line-height: 1.25;
-    }
-    
-    .gradient-txt {
-      background: linear-gradient(135deg, #fff, var(--accent-neon));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    
-    .hero-glow p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
-    
-    .phone-bar {
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
-      padding: 18px;
-      border-top: 1px solid var(--border-color);
-      border-bottom: 1px solid var(--border-color);
-      border-radius: 8px;
-      margin: 25px auto;
-      max-width: 600px;
-      font-size: 1.4rem;
-      font-weight: 900;
-      letter-spacing: 0.05em;
-      text-align: center;
-    }
-    
-    .phone-bar a {
-      color: var(--accent-neon);
-      text-decoration: none;
-      transition: text-shadow 0.3s;
-    }
-    
-    .phone-bar a:hover {
-      text-shadow: 0 0 10px var(--accent-neon);
-    }
-    
-    .neon-btn {
-      display: inline-block;
-      padding: 15px 36px;
-      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
-      color: white;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 9999px;
-      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
-      transition: all 0.3s ease;
-      letter-spacing: 0.03em;
-    }
-    
-    .neon-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
-    }
-    
-    .sec-wrap {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-    
-    .glass-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 24px;
-      padding: 45px;
-      backdrop-filter: blur(10px);
-      margin-bottom: 45px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-    
-    .glass-box h2 {
-      font-size: 2.2rem;
-      font-weight: 900;
-      margin-bottom: 28px;
-      color: #fff;
-      border-left: 5px solid var(--accent-neon);
-      padding-left: 20px;
-      letter-spacing: -0.04em;
-    }
-    
-    .glass-box p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      text-align: justify;
-    }
-    
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
-    }
-    
-    .mini-card {
-      background: rgba(255, 255, 255, 0.015);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 28px;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .mini-card:hover {
-      border-color: var(--accent-neon);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-    }
-    
-    .mini-card h3 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: -0.02em;
-    }
-    
-    .mini-card p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-      margin-bottom: 0;
-    }
-    
-    .premium-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      color: var(--text-main);
-    }
-    
-    .premium-table th {
-      background: rgba(255,255,255,0.03);
-      padding: 16px;
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 800;
-      text-align: left;
-    }
-    
-    .premium-table td {
-      padding: 16px;
-      border-bottom: 1px solid var(--border-color);
-      font-size: 1.05rem;
-    }
-    
-    .premium-table tbody tr:hover {
-      background: rgba(255,255,255,0.01);
-    }
-    
-    .ugc-review {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    
-    .reviewer-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.88rem;
-      color: var(--accent-neon);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    
-    .reviewer-text {
-      font-size: 1.02rem;
-      color: var(--text-main);
-      font-style: italic;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid var(--border-color);
-      padding: 50px 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    
-    footer p {
-      margin-bottom: 12px;
-    }
-    
-    footer a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    
-    footer a:hover {
-      color: var(--accent-neon);
-    }
-    
-    @media(max-width: 768px) {
-      .hero-glow h1 {
-        font-size: 2.3rem;
-      }
-      .nav-links {
-        display: none;
-      }
-      .glass-box {
-        padding: 28px;
-      }
-      .premium-table {
-        font-size: 0.9rem;
-      }
-    }
-  
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "연남 룸싸롱 상세정보",
-      "url": "https://t3b05-yn-room-pr-2.pages.dev/about.html",
-      "description": "연남 룸싸롱의 상세 위치, 이용 프로세스 및 예약 가격 안내."
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>연남 룸싸롱 가격 정보 | 연남동 룸싸롱 상세 시스템</title>
+    <meta name="description" content="연남 룸싸롱 가격, 시스템, 분위기 전격 공개. 답 없는 가격표는 없다. 진짜 연남 룸싸롱 정보는 여기. 지금 전화 010-6279-0862">
+    <meta name="keywords" content="연남 룸싸롱, 연남 룸싸롱 가격, 연남동 룸싸롱, 연남 룸싸롱 추천, 연남 룸싸롱 시스템, 연남 룸싸롱 후기">
+    <link rel="canonical" href="https://t3b05-yn-room-pr-2.vercel.app/">
+    <meta property="og:title" content="연남 룸싸롱 가격 정보 | 연남동 럭셔리 룸싸롱 시스템 완전 해부">
+    <meta property="og:description" content="연남 룸싸롱 가격, 시스템, 분위기 전격 공개. 답 없는 가격표는 없다. 진짜 연남 룸싸롱 정보는 여기.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-yn-room-pr-2.vercel.app/">
+    <meta property="og:image" content="https://t3b05-yn-room-pr-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* ===== RAW CONCRETE BRUTALIST RESET ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            background-color: #f5f0eb;
+            color: #1a1a1a;
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Nanum Gothic', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* ===== TYPOGRAPHY RAW OVERSIZED ===== */
+        h1, h2, h3, h4 {
+            font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            word-break: keep-all;
+        }
+        h1 {
+            font-size: clamp(2.8rem, 12vw, 6.5rem);
+            color: #1a1a1a;
+            text-shadow: 6px 6px 0 rgba(0,0,0,0.08);
+        }
+        h2 {
+            font-size: clamp(2rem, 8vw, 4rem);
+            border-left: 12px solid #d4a373;
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        h3 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            margin-bottom: 0.8rem;
+        }
+        h4 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 700;
+            text-transform: none;
+        }
+        p, li, .text-block {
+            font-size: clamp(1rem, 2.2vw, 1.25rem);
+            font-weight: 400;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 3px solid #d4a373;
+            font-weight: 700;
+            transition: background 0.15s, color 0.15s;
+        }
+        a:hover {
+            background-color: #d4a373;
+            color: #1a1a1a;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #f5f0eb;
+            border-bottom: none;
+            padding: 0.6rem 1.8rem;
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            transition: 0.12s;
+        }
+        .tel-link:hover {
+            background: #d4a373;
+            color: #1a1a1a;
+            transform: scale(1.02);
+        }
+        /* ===== LAYOUT FULL BLEED ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        /* ===== COMPONENTS ===== */
+        /* header / nav */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1.5rem;
+            border-bottom: 4px solid #1a1a1a;
+            background: #f5f0eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-logo {
+            font-size: clamp(1.4rem, 4vw, 2.2rem);
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            border-bottom: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 0.3rem;
+            transition: 0.12s;
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-bottom-color: #d4a373;
+            background: transparent;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 4px 0;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #1a1a1a;
+            border-radius: 0;
+        }
+        /* hero */
+        .hero {
+            padding: 3rem 0 2rem;
+            border-bottom: 4px solid #1a1a1a;
+        }
+        .hero h1 {
+            margin-bottom: 1.2rem;
+        }
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.6rem);
+            font-weight: 500;
+            max-width: 900px;
+        }
+        /* card */
+        .card {
+            background: #ffffff;
+            border: 4px solid #1a1a1a;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.08);
+            transition: 0.15s;
+        }
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 12px 12px 0 rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #d4a373;
+            padding-bottom: 0.5rem;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card li {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card li:last-child {
+            border-bottom: none;
+        }
+        .price-tag {
+            font-weight: 900;
+            font-size: 1.3em;
+            color: #1a1a1a;
+        }
+        /* faq */
+        .faq-item {
+            border-bottom: 4px solid #1a1a1a;
+            padding: 1.5rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 900;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-q::after {
+            content: '▼';
+            font-size: 1.2rem;
+            transition: 0.2s;
+        }
+        .faq-q.open::after {
+            transform: rotate(180deg);
+        }
+        .faq-a {
+            margin-top: 1rem;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            display: none;
+        }
+        .faq-a.open {
+            display: block;
+        }
+        /* btn */
+        .btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #f5f0eb;
+            padding: 1rem 2.5rem;
+            font-weight: 900;
+            font-size: 1.4rem;
+            letter-spacing: 0.05em;
+            border: none;
+            cursor: pointer;
+            transition: 0.12s;
+            text-transform: uppercase;
+            border-bottom: none;
+        }
+        .btn:hover {
+            background: #d4a373;
+            color: #1a1a1a;
+        }
+        /* footer */
+        .site-footer {
+            border-top: 4px solid #1a1a1a;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #f5f0eb;
+                border-bottom: 4px solid #1a1a1a;
+                padding: 1.5rem;
+                gap: 1rem;
+                z-index: 999;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                text-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+            }
+            .card {
+                padding: 1.5rem;
+                box-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+            }
+            .card:hover {
+                transform: none;
+                box-shadow: 4px 4px 0 rgba(0,0,0,0.08);
+            }
+        }
+        @media (min-width: 769px) {
+            .hamburger-menu {
+                display: none;
+            }
+            .nav-links {
+                display: flex !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header class="glow-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo-glow">연남 룸싸롱 포털</a>
-      <nav class="nav-links">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </div>
-  </header>
+    <!-- NAV -->
+    <nav class="nav-bar">
+        <a href="#" class="nav-logo">연남 룸싸롱</a>
+        <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">정보</a></li>
+            <li><a href="#">가격</a></li>
+            <li><a href="#">시스템</a></li>
+            <li><a href="#">후기</a></li>
+            <li><a href="tel:010-6279-0862">전화</a></li>
+        </ul>
+    </nav>
 
-  <section class="hero-glow">
-    <h1><span class="gradient-txt">DETAILED INFO</span> 상세 정보</h1>
-    <p>연남 로컬로서 형들이 헛돈 쓰는 일 절대 없도록 확실한 랜드마크와 투명 주종 가격을 공개합니다.</p>
-    <div class="phone-bar">
-      📞 실시간 직통 전화: <a href="tel:010-6279-0862">010-6279-0862</a>
-    </div>
-  </section>
+    <!-- HERO -->
+    <section class="container hero">
+        <h1>연남 룸싸롱<br>가격 정보</h1>
+        <p>가격 숨기고, 조건 따로, 시스템은 안개 속에? <strong>이제 그만.</strong> 연남동 룸싸롱의 진짜 가격, 진짜 시스템, 진짜 분위기를 전격 공개한다. 유사품에 속지 마라. 여기가 끝판왕.</p>
+        <a href="tel:010-6279-0862" class="tel-link">☎ 010-6279-0862</a>
+    </section>
 
-  <main class="sec-wrap">
-    <div class="glass-box">
-      <h2>스토리 & 이용 동기</h2>
-      <p>정통 비즈니스 룸싸롱의 가치와 정직함을 지키기 위해 이 바닥에 뼈를 묻었음. 나 또한 젊은 날 회사 접대비를 들고 연남 일대 업소들을 전전하다가, 양아치 사장한테 속아서 맛탱이 간 가짜 양주 눈탱이 맞고 회사 자금 거덜 내서 사말이 나오던 지옥 같은 쓰라린 실책을 겪은 바 있다. 그때 굳게 다짐했지. 내 마포 강서 하늘 아래에서는 소중한 비즈니스 파트너와 형제들이 안심하고 100% 품위를 지키며 합리적으로 놀 수 있는 진짜 하이엔드 룸의 표본을 구축하겠다고. 그렇게 다듬어진 VVIP 전문 예약 번호가 바로 010-6279-0862다.</p>
-    </div>
-
-    <div class="glass-box">
-      <h2>상세 위치 시그널 & 인프라</h2>
-      <p>📌 VVIP 최상의 위치 및 편의성 가이드: 연남 최고급 상업 중심 지구 골든 타워 메인 코너에 세련되게 자리 잡고 있으며, 프라이빗 지하 주차장에서 단독 VIP 전용 비밀 통로를 통한 매장 입장이 완벽하게 연동 설계되어 보안 유지가 타의 추종을 불허한다. 초호화 최고급 인테리어와 풀 에어컨 환기 시스템 보유.</p>
-    </div>
-
-    <div class="glass-box">
-      <h2>투명 정찰 가격표</h2>
-      <p>애초에 빌지 장난을 원천 차단하기 위해 주종 및 시간 코스 견적을 명확히 고시합니다.</p>
-      
-        <table class="premium-table">
-          <thead>
-            <tr><th>VIP 룸 코스 분류</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>정통 비즈니스 퍼스트 A코스</td><td>120분</td><td>350,000원</td><td><strong>300,000원</strong></td></tr>
-            <tr><td>최고급 임페리얼 스페셜 B코스</td><td>120분</td><td>550,000원</td><td><strong>450,000원</strong></td></tr>
-            <tr><td>VVIP 프레스트지 마스터 C코스</td><td>180분</td><td>800,000원</td><td><strong>700,000원</strong></td></tr>
-          </tbody>
-        </table>
-      
-    </div>
-
-    <div class="glass-box">
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      <div style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
-        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 예약 없이 바로 매장으로 가도 되나요?</h4>
-        <p style="color: var(--text-muted); font-size: 1rem;">A. 주말이나 피크 타임에는 룸이 풀로 차서 워크인으로 오시면 대기 시간이 2~3시간씩 걸리거나 헛걸음하기 쉽습니다. 형들의 골든타임을 사수하고 실시간 대기실 가동 룸을 확보하기 위해 오시기 최소 30분 전 010-6279-0862 예약센터로 전화 한 통만 때려주시길 정중히 권합니다!</p>
-      </div>
-      <div>
-        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 정찰가 외에 현장 빌지 추가금 청구가 있나요?</h4>
-        <p style="color: var(--text-muted); font-size: 1rem;">A. 단 10원짜리 하나도 허위나 부가 요금을 추가 청구하지 않습니다. 예약 단계에서 합의된 정찰 요금 그대로 카드/현금 깔끔 정산 마감해 드리니 눈탱이 걱정은 싹 접어두셔도 좋습니다!</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p><strong>연남 룸싸롱 찐후기 가이드 포털</strong></p>
-    <p>주소: 서울특별시 연남구 일대 | 연락처: 010-6279-0862</p>
-    <p>
-      <a href="index.html">홈</a> | 
-      <a href="about.html">상세정보</a>
-      | <a href="blog.html">블로그</a>
-    </p>
-    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 연남 룸싸롱 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-  </footer>
-
+    <!-- DETAIL SECTION 1: PRICE BREAKDOWN -->
+    <section class="container">
+        <h2>💸 가격표 — 숨김 없다</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>스탠다드</h3>
+                <ul>
+                    <li><span>룸 대여 (2시간)</span> <span class="price-tag">40만원</span></li>
+                    <li><span>마인드 (2시간)</span> <span class="price-tag">20만원</span></li>
+                    <li><span>테이블 세팅</span> <span class="price-tag">10만원</span></li>
+                    <li><span>합계</span> <span class="price-tag">70만원</span></li>
+                </ul>
+                <p style="margin-top:1rem; font-weight:300;">※ 추가 시간당 15만원 (마인드 포함)<br>※ 음료/안주 별도</p>
+            </div>
+            <div class="card">
+                <h3>프리미엄</h3>
+                <ul>
+                    <li><span>프리미엄 룸 (2시간)</span> <span class="price-tag">60만원</span></li>
+                    <li><span>VIP 마인드 (2시간)</span> <span class="price-tag">30만원</span></li>
+                    <li><span>프리미엄 테이블</span> <span class="price-tag">15만원</span></li>
+                    <li><span>합계</span> <span class="price-tag">105만원</span></li>
+                </ul>
+                <p style="margin-top:1rem; font-weight:300;">※ 추가 시간당 25만원<br>※ 샴페인/위스키 포함 가능 (별도 문의)</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
